@@ -38,9 +38,22 @@ public class page5 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String text1 = e1.getText().toString();
+                if(text1.getBytes().length <= 0)
+                {
+                    text1="0";
+                }
                 String text2 = e2.getText().toString();
+                if(text2.getBytes().length <= 0)
+                {
+                    text2="0";
+                }
                 String text3 = e3.getText().toString();
+                if(text3.getBytes().length <= 0)
+                {
+                    text3="0";
+                }
                 int result = Integer.parseInt(text1)*15000+Integer.parseInt(text2)*13000+Integer.parseInt(text3)*9000;
                 int resultmany=Integer.parseInt(text1)+Integer.parseInt(text2)+Integer.parseInt(text3);
 
